@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Oxanium } from 'next/font/google';
-
+import { Oxanium } from "next/font/google";
+import MouseMoveEffect from "@/components/mouse-move-effect";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 };
 
 const oxanium = Oxanium({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'], // Choose weights you need
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "600", "700"], // Choose weights you need
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={oxanium.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
+          <MouseMoveEffect />
           {children}
         </ThemeProvider>
       </body>
