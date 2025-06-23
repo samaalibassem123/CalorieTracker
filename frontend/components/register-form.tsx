@@ -22,11 +22,17 @@ export function RegisterForm({
       <div className="grid gap-6">
         <div className="grid gap-3">
           <Label htmlFor="password">Username</Label>
-          <Input id="password" type="password" required />
+          <Input id="text" type="text" required />
         </div>
-        <div className="grid gap-3">
-          <Label htmlFor="password">Age</Label>
-          <Input id="password" type="number" required />
+        <div className="flex gap-2.5 items-center">
+          <div className="grid gap-3">
+            <Label htmlFor="password">Age</Label>
+            <Input id="password" type="number" required />
+          </div>
+          <div className="grid gap-3">
+            <Label htmlFor="password">Weight in Kg</Label>
+            <Input id="password" type="number" required />
+          </div>
         </div>
         <div className="grid gap-3">
           <Label htmlFor="email">Email</Label>
@@ -53,7 +59,7 @@ export function RegisterForm({
             <span>Male</span>
           </label>
           <label
-            className=" cursor-pointer  rounded-md flex items-center space-x-2 border p-5"
+            className=" cursor-pointer rounded-md flex items-center space-x-2 border p-5"
             htmlFor="female"
           >
             <RadioGroupItem value="female" id="female" />
@@ -66,7 +72,7 @@ export function RegisterForm({
         </Button>
       </div>
       <div className="text-center text-sm">
-        Don&apos;t have an account?{" "}
+        Don't have an account?{" "}
         <Link href="/auth/login" className="underline underline-offset-4">
           Sign up
         </Link>

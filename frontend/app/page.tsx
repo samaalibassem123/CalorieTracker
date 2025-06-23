@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <header className="p-2 ">
-        <Button className=" animate-pulse float-right" variant={"secondary"}>
+        <Button className=" hover:animate-none animate-pulse float-right" variant={"secondary"}>
           <Link href={"/auth/login"}>Login</Link>
         </Button>
       </header>

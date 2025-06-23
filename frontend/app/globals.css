@@ -163,3 +163,14 @@
 *{
   @apply  selection:bg-amber-200 selection:text-black;
 }
+
+.shine-effect {
+  @apply animate-shine;
+  background: linear-gradient(45deg, #fff, #ccc, #fff);
+  background-size: 200%;
+}
+.gradient-flow {
+  @apply animate-gradient-flow;
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+  background-size: 200%;
+}
