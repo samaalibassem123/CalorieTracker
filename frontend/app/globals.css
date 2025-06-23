@@ -160,3 +160,6 @@
 }
 
 
+*{
+  @apply  selection:bg-amber-200 selection:text-black;
+}
